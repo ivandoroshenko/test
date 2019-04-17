@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 2%;
+    margin: 0;
+    background: aqua;
+}
+
+.box {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.cell {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.row:nth-child(odd) .cell:nth-child(even) {
+    background-color: green;
+}
+
+.row:nth-child(even) .cell:nth-child(odd) {
+    background-color: green;
+}
+
+.row:first-child .cell:nth-child(1),
+.row:first-child .cell:last-child {
+    background-image: url('./img/b-rook.png');
+}
+
+.row:first-child .cell:nth-child(2),
+.row:first-child .cell:nth-last-child(2) {
+    background-image: url('./img/b-horse.png');
+}
+
+.row:first-child .cell:nth-child(3),
+.row:first-child .cell:nth-last-child(3) {
+    background-image: url('./img/b-bishop.png');
+}
+
+.row:first-child .cell:nth-child(4) {
+    background-image: url('./img/b-queen.png');
+}
+
+.row:first-child .cell:nth-child(5) {
+    background-image: url('./img/b-king.png');
+}
+
+.row:nth-child(2) .cell {
+    background-image: url('./img/b-pawn.png');
+}
+
+.row:nth-child(2) .cell {
+    background-image: url('./img/b-pawn.png');
+}
+
+.row:nth-last-child(2) .cell {
+    background-image: url('./img/w-pawn.png');
+}
+.row:last-child .cell:nth-child(1),
+.row:last-child .cell:last-child {
+    background-image: url('./img/w-rook.png');
+}
+.row:last-child .cell:nth-child(2),
+.row:last-child .cell:nth-last-child(2) {
+    background-image: url('./img/w-horse.png');
+}
+.row:last-child .cell:nth-child(3),
+.row:last-child .cell:nth-last-child(3) {
+    background-image: url('./img/w-bishop.png');
+}
+.row:last-child .cell:nth-child(4) {
+    background-image: url('./img/w-queen.png');
+}
+.row:last-child .cell:nth-child(5) {
+    background-image: url('./img/w-king.png');
+}
