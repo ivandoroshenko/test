@@ -11,7 +11,7 @@
 }
 
 h1 {
-  font-family: Helvetica; background-color: blue; padding: 5px;
+  font-family: Helvetica; background-color: green !important; padding: 5px;
 }
 
 .subtitle {
@@ -21,4 +21,9 @@ h1 {
 
 #top h1:hover {
     background-color: red;
+}
+
+h1:before,
+h1:after {
+    content: "10000 ";
 }
